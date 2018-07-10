@@ -1,0 +1,87 @@
+@import '../../common/common.wxss';
+
+page,.main{
+    height: 100%;
+}
+.categroy-left{
+    float: left;
+    width: 160rpx;
+    height: 100%;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+}
+.categroy-left .cate-list{
+    height: 90rpx;
+    line-height: 90rpx;
+    text-align: center;
+    border-left: 3px solid #fff;
+}
+.categroy-left .cate-list.on{ 
+    color: #00a4b4;
+    border-color: #00a4b4;
+}
+.categroy-right{
+    float: right;
+    width: 590rpx;
+    height: 100%;
+    overflow: hidden;
+    
+}
+.cate-box{
+    height: 100%;
+    padding:40rpx;
+    box-sizing: border-box;
+}
+.cate-box .cate-banner image{
+    display: block;
+    width: 100%;
+    height: 190rpx;
+}
+.cate-title{
+    position: relative;
+    height: 30rpx;
+    line-height: 30rpx;
+    padding:10rpx 0 55rpx;
+    text-align: center;
+    color: #00a4b4;
+    font-size: 28rpx;
+}
+.cate-title::before{
+    position: absolute;
+    left: 130rpx;
+    top: 24rpx;
+    content: '';
+    width: 70rpx;
+    height: 4rpx;
+    background: #00a4b4;
+}
+.cate-title::after{
+    position: absolute;
+    right: 130rpx;
+    top: 24rpx;
+    content: '';
+    width: 70rpx;
+    height: 4rpx;
+    background: #00a4b4;
+}
+
+.product-list{
+    display: inline-block;
+    width: 255;
+    height: 255;
+    text-align: center;
+    font-size: 24rpx;
+}
+.product-list image{
+    width: 225rpx;
+    height: 225rpx;
+    margin-bottom: 20rpx;
+    margin-left: 20rpx;
+}
+.product-list .classname{ 
+  max-width: 225rpx;
+  overflow: hidden
+} 
+.product-list:nth-child(3n){
+    margin-right: 0;
+}

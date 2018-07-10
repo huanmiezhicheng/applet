@@ -1,0 +1,48 @@
+<view class="main">
+    <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true">
+        <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+            <swiper-item>
+                <image src="{{item}}" class="slide-image" width="100%"/>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="search">
+        <navigator url="search/search">
+            <view class="search-text">
+            <text class='iconfont icon-sousuo' size="14"></text>
+                搜 索
+            </view>
+        </navigator>
+    </view>
+    <view class="selected">
+        <view class="select-title"><text>云米推荐</text></view>
+        <view class="select-top">
+            <view class="select-top-small">
+                <navigator url="list/list">
+                    <image src="https://cnbj2.fds.api.xiaomi.com/viomi-fileupload/images/wares/sku/1/O3Bqd3AtQbEjCQSnTeP.jpg?GalaxyAccessKeyId=5411745189735&Expires=361520064512805&Signature=rYm/RLO6rg/t0mhdCSz60yv22mw="></image>
+                </navigator>
+            </view>
+            <view class="select-top-small">
+                <navigator url="list/list">
+                    <image src="https://cnbj2.fds.api.xiaomi.com/viomi-fileupload/images/wares/sku/1/mNbd6qqimWiQWie6Z0q.jpg?GalaxyAccessKeyId=5411745189735&Expires=361520064510995&Signature=2QOYmteVl5FjVC4v09lHdM2GMRk="></image>
+                </navigator>
+            </view>
+        </view>
+        <view class="select-top-small">
+            <navigator url="list/list">
+                <image src="https://cnbj2.fds.api.xiaomi.com/viomi-fileupload/images/wares/sku/1/rj8zltUx8Mx6FtUPQlw.jpg?GalaxyAccessKeyId=5411745189735&Expires=361520064513741&Signature=7SyFG19q6B1kzU9CoABKsCT6NQc="></image> 
+            </navigator>
+        </view>
+        <view class="select-top-small">
+            <navigator url="list/list">
+                <image src="https://cnbj2.fds.api.xiaomi.com/viomi-fileupload/images/wares/sku/1/WqErjYrbBF2k6bBIfx2.jpg?GalaxyAccessKeyId=5411745189735&Expires=361520064514194&Signature=qP6RnIMHW2f+jTcdiBLiXn1V8VA="></image> 
+            </navigator>
+        </view>
+    </view>
+    <view >
+   <video class='video' src="{{src}}" danmu-btn enable-danmu   controls  danmu-list="{{danmuList}}"
+bindplay='bindplay' bindpause='bindpause' bindended='bindend' bindtimeupdate="bindtimeupdate"
+  ></video>
+</view>
+   
+</view>
